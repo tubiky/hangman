@@ -38,6 +38,13 @@ def spell_check(spell, answer):
 
 
 
+# 입력용 키패드를 그리는 funtion
+def drawing_key_pad():
+    key_pad_width = 45
+    key_pad_height = 45
+    offset = 4
+
+
 
 def main():
     DATA = check_voca_list()
