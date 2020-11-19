@@ -1,7 +1,10 @@
 import pygame, os
 import random
 
-
+# I'd like to use a bit dark greenish color as a main theme. Screencaptured some examples for the finalized app.
+# Need to make main menu, option in additino to the main game loop.
+# font Color should be WHITE
+# backgroun color will be one of purple, gray, dark green like khaki
 # 파일을 화면에 끓어다 놓으면 해당 파일을 parameter로 받는 function으로 개선
 def check_voca_list():
     VOCA = []
@@ -138,6 +141,7 @@ def main():
 
                 elif drawKeypad()[0].collidepoint(event.pos):
                     print("Keypad_A has been clicked")
+                    
                     click_sound.play()
 
                 else:
@@ -210,3 +214,4 @@ Linux Path Concept
 ../ : one upper level of current path
 ~/ : Home path
 '''
+# BG = pygame.transform.scale(pygame.image.load(os.path.join("FOLDERNAME", "FILENAME.EXTENSION"))), (SIZE_OF_WIDTH, SIZE_OF_HEIGHT))
